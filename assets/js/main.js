@@ -5,6 +5,7 @@ btn.addEventListener("click", function () {
     const age = getAge();
 
     getPrice(distance, age);
+    getPlace(user_name, finalPrice);
 });
 
 function getDistance() {
@@ -16,6 +17,8 @@ function getDistance() {
 function getUsername() {
     const user_name = document.getElementById("user_name").value;
     console.log(user_name);
+    return user_name;
+
 }
 
 function getAge() {
@@ -41,4 +44,11 @@ function getPrice(distance, age) {
     }
 
     console.log(finalPrice);
+    return finalPrice;
+}
+
+function getPlace(user_name, finalPrice) {
+    passenger_name.innerHTML = user_name
+    ticket_price.innerHTML = (finalPrice+"€")
+  
 }

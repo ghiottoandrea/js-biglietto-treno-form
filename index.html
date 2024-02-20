@@ -12,18 +12,70 @@
 </head>
 
 <body class="debug">
-    <input type="text" id="user_name" placeholder="Name">
-    <input type="text" id="distance" placeholder="Km">
+    <div class="container">
+        <div class="top">
+            <h2 class="top-tittle">CALCOLA IL PREZZO DEL TUO BIBLIETTO</h2>
+            <div class="card">
+                <div class="row">
+                    <div class="col-4">
+                        <span>Nome Cognome</span>
+                        <div>
+                            <input type="text" id="user_name" placeholder="Nome">
 
-    <select id="selectOptions">
-        <option value="minor">Minorenne</option>
-        <option value="adult">Maggiorenne</option>
-        <option value="over">Over 65</option>
-    </select>
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <span class="">Km da percorrere</span>
+                        <div>
+                            <input type="text" id="distance" placeholder="Km">
+                        </div>
+                    </div>
+                    <div class="col-4">
+                        <span>Fascia d'età</span>
+                        <div><select id="selectOptions">
+                            <option value="minor">Minorenne</option>
+                            <option value="adult">Maggiorenne</option>
+                            <option value="over">Over 65</option>
+                        </select></div>
+                    </div>
+                    <div class=" col-12 buttons">
+                        <button id="btn">Genera</button>
+                        <button class="reset">Annulla</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom">
+            <h2>IL TUO BIGLIETTO</h2>
+            <div class="ticket">
+                <h4>DETTAGLIO PASSEGERO</h4>
+                <div class="row">
+                    <div class="col-4">
+                        <h3>Nome Passeggero</h3>
+                        <span id="passenger_name"></span>
+                    </div>
+                    <div class="col-2">
+                        <strong>Offerta</strong>
+                        <div>Biglietto standard</div>
+                    </div>
+                    <div class="col-2">
+                        <strong>Carrozza</strong>
+                        <div id="n_carriage"></div>
+                    </div>
+                    <div class="col-2">
+                        <strong>Codice</strong>
+                        <div id="code"></div>
+                    </div>
+                    <div class="col-2">
+                        <strong>Costo biglietto</strong>
+                        <div id="ticket_price"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
-    <button onclick="getValue(), getSelectedOption()">Invia</button>
 
-
+    </div>
     <script src="./assets/js/main.js"></script>
 
 </html>

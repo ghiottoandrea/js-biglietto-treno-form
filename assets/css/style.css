@@ -1,0 +1,79 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --train-primary: rgb(97, 7, 7);
+    --train-light: white;
+    --train-dark: rgba(128, 128, 128, 1);
+}
+
+body {
+    height: 100vh;
+    overflow-y: hidden;
+    background-color: var(--train-primary);
+    color: var(--train-light);
+}
+h2{
+    text-align: center;
+    margin-top: 1rem;
+}
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    
+}
+.col-2{
+    width: calc((100%/12)*2);
+}
+.col-4 {
+    width: calc((100%/12)*4);
+}
+
+.col-12 {
+    width: 100%;
+}
+
+.card {
+    margin-top: 1rem;
+    padding: 1rem;
+    text-align: center;
+    background-color: var(--train-light);
+    color: var(--train-primary);
+    border-radius: 10px;
+}
+.ticket{
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: var(--train-light);
+    color: black;
+}
+.buttons{
+    text-align: center;
+    margin-top: 2rem;
+}
+#btn, .reset{
+    background-color: lightgray;
+    color: var(--train-primary);
+    padding: 0.4rem;
+    border-radius: 10px;
+    border: 1px solid var(--train-primary);
+}
+#distance, #user_name, #selectOptions{
+    margin-top: 1rem;
+    border: 1px solid var(--train-primary);
+    text-align: center;
+    border-radius: 5px;
+    padding: 0.2rem;
+}
+h4{
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid black;
+}
