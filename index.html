@@ -12,16 +12,18 @@
 </head>
 
 <body class="debug">
+    <input type="text" id="user_name" placeholder="Name">
+    <input type="text" id="distance" placeholder="Km">
 
-<header id="side_header"></header>
-<!-- /#side_header -->
+    <select id="selectOptions">
+        <option value="minor">Minorenne</option>
+        <option value="adult">Maggiorenne</option>
+        <option value="over">Over 65</option>
+    </select>
 
-<main id="side_main"></main>
-<!-- /#side_main -->
+    <button onclick="getValue(), getSelectedOption()">Invia</button>
 
-<footer id="side_footer"></footer>
-<!-- /#side_footer -->
 
-</body>
+    <script src="./assets/js/main.js"></script>
 
 </html>
