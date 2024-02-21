@@ -77,3 +77,18 @@ h4{
     margin-bottom: 0.5rem;
     border-bottom: 1px solid black;
 }
+.back{
+    background-color: var(--train-dark);
+}
+#ticket_type, #n_carriage, #code, #ticket_price{
+    margin-top: 2rem;
+    text-align: center;
+}
+#passenger_name{
+    font-size: 22px;
+    margin-top: 1rem;
+}
+.offert, .carriage, .code_name, .ticket_pricename{
+    text-align: center;
+    height: 90px;
+}

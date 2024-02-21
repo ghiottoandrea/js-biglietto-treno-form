@@ -6,6 +6,7 @@ btn.addEventListener("click", function () {
 
     getPrice(distance, age);
     getPlace(user_name, finalPrice);
+    getTicket(age);
 });
 
 function getDistance() {
@@ -50,5 +51,19 @@ function getPrice(distance, age) {
 function getPlace(user_name, finalPrice) {
     passenger_name.innerHTML = user_name
     ticket_price.innerHTML = (finalPrice+"€")
-  
+    let carriage_number = Math.floor(Math.random() * 10) + 1;
+    let code_number = Math.floor(10000 + Math.random() * 90000);
+    code.innerHTML = code_number
+    n_carriage.innerHTML = carriage_number
+
+}
+
+function getTicket(age) {
+    if (age === "minor") {
+        ticket_type.innerHTML = "Biglietto ridotto"
+    } else if (age === "over") {
+        ticket_type.innerHTML = "Biglietto senior"
+    } else {
+        ticket_type.innerHTML = "Biglietto standard"
+    }
 }
